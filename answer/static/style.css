@@ -1,0 +1,208 @@
+/* 上下左右の隙間を削除 */
+body {
+  margin: 0;
+}
+
+/* header */
+.header {
+  background-color: #007bc7;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-title {
+  margin-left: 5%;
+}
+
+.nav {
+  display: flex;
+  margin-right: 5%;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+.nav > a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav > a:hover {
+  opacity: 0.5;
+}
+
+/* mainのheader */
+.main-header {
+  color: white;
+  width: 100%;
+  /* セクションごとに10%のmarginをとる */
+  margin-bottom: 10%;
+}
+
+.main-header {
+  position: relative;
+  text-align: center;
+}
+.main-header > img {
+  width: 100%;
+  max-height: 500px;
+  min-height: 250px;
+}
+
+.main-header > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+}
+
+/* section共通 */
+/* アンダーバーのみ変える */
+.section-title > div > span {
+  font-size: 25px;
+  position: relative;
+}
+
+.section-title > div > span::before {
+  content: "";
+  border-bottom: 2px solid #336600;
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  width: 60px;
+}
+
+.first-letter {
+  color: #336600;
+}
+
+/* profileセクション */
+#profile {
+  text-align: center;
+  color: grey;
+  margin-bottom: 10%;
+}
+
+.profile-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.profile-flex > img {
+  width: 200px;
+  height: auto;
+}
+
+/* selfPR */
+#self-pr {
+  text-align: center;
+  color: grey;
+  background-image: url("image/wind-turbine-5163993_1280.jpg");
+  background-size: cover;
+  padding: 5%;
+  margin-bottom: 10%;
+}
+
+.flex-cover {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 3%;
+}
+
+.card {
+  padding: 10px;
+  background-color: rgba(240, 240, 240, 0.3);
+  margin: 0 10px;
+  color: black;
+}
+
+.card > h3 {
+  color: #336600;
+}
+
+/* vision */
+#vision {
+  text-align: center;
+  color: grey;
+  /* NEXT COMINGSOONをfooterに含め、position:absolute;しているため
+  margin-bottomではなくpadding-bottomを使っている */
+  padding-bottom: 10%;
+}
+
+.vision-content {
+  color: black;
+  font-family: serif;
+}
+
+.vision-content-title {
+  color: #336600;
+  font-size: 25px;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  background-color: rgb(25, 89, 118);
+  color: white;
+  position: relative;
+  width: 100%;
+}
+
+/* next comingsoon */
+.next {
+  text-align: center;
+  color: #336600;
+  font-size: 35px;
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.next > p {
+  margin-bottom: 0;
+}
+
+.btn-cover {
+  padding-top: 30px;
+}
+
+.footer-btn {
+  display: inline-block;
+  align-items: center;
+  padding-top: 15px;
+  width: 200px;
+  height: 45px;
+  font-size: 20px;
+  background-color: rgb(25, 89, 118);
+  border: 3px solid white;
+  color: white;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+.footer-btn:hover {
+  opacity: 0.5;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 656px) {
+  .flex-cover {
+    display: block;
+  }
+
+  .card {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 10px 0;
+    color: black;
+  }
+}
