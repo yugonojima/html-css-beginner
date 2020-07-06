@@ -1,0 +1,208 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ヘッダー */
+header {
+  padding: 0 50px 0;
+  background-color: blue;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+
+span {
+  color: darkgreen;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  align-items: center;
+}
+
+.header-flex p:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+/* セクション１ */
+.mistake {
+  background-image: url('../static/image/business-suit-690048_1920.jpg');
+  background-size: contain;
+  height: 500px;
+ color: #fff;
+ position: relative;
+}
+
+.text-wrapper {
+ width: 400px;
+ height: 50px; 
+ position: absolute;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ margin: auto;
+ text-align: center;
+ font-size: 20px;
+ font-weight: bold;
+}
+
+/* セクション２ */
+.profile {
+  height: 500px;
+  text-align: center;
+  position: relative;
+  margin-top: 150px;
+}
+
+.profile h2 {
+  text-decoration: underline;
+  text-decoration-color: darkgreen;
+}
+
+.profile-wrapper {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 65px;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  
+}
+
+.profile img {
+  width: 200px;
+  height: 200px;
+}
+
+
+
+.detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.detail-wrapper p{
+  line-height: 30px;
+}
+
+/* セクション３ */
+
+.pr {
+background-image: url(../static/image/wind-turbine-5163993_1280.jpg);
+background-size: cover;
+padding: 70px 30px 30px;
+text-align: center;
+height: 400px;
+}
+
+.pr h2 {
+  text-decoration: underline;
+  text-decoration-color: darkgreen;
+}
+
+.PRs-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  height: 250px;
+}
+
+.PR-wrapper {
+  background-color: rgba(222, 231, 247, 0.3);
+  width: 32.5%;
+}
+
+.PR-wrapper h3  {
+margin: 20px 0;
+color: darkgreen;
+}
+
+.PR-wrapper p  {
+margin: 0 10px 20px;
+}
+
+/* セクション３ */
+
+.vision {
+  font-family: serif;
+  text-align: center;
+  padding-top: 100px;
+}
+.vision h2 {
+  text-decoration: underline;
+  text-decoration-color: darkgreen;
+}
+
+.vision h3 {
+  margin: 30px 0;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: darkgreen;
+}
+
+.vision p {
+  letter-spacing: 3px;
+}
+
+.a {
+  margin-bottom: 2em;
+}
+
+.b {
+  margin-bottom: 8em;
+}
+
+.c {
+  font-size: 30px;
+  color: darkgreen;
+}
+
+/* フッター */
+footer {
+  background-color: rgba(21, 12, 151, 0.829);
+  color: #fff;
+  height: 130px;
+  text-align: center;
+}
+
+footer .btn {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 15px 70px;
+  margin: 30px 0 5px;
+  display: inline-block;
+}
+
+footer .btn:hover {
+  opacity: 0.6;
+} 
+
+/* メディアクエリ */
+
+@media screen and (max-width:768px) {
+ .PRs-wrapper {
+   height: 75%;
+ }
+
+ .PR-wrapper {
+   height: 100%;
+ }
+ .PR-wrapper p {
+  white-space: normal;
+  overflow: auto;
+   text-overflow: ellipsis;
+ }
+}
